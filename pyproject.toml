@@ -1,15 +1,11 @@
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "src"
 version = "0.0.1"
-authors = [
-    { name = "Kartik Shivakumar Gadad", email = "kartikshivakumargadad@gmail.com" },
-]
-description = "MLOps project package"
-requires-python = ">=3.10"
+description = "An MLOps project for productionizing models"
+authors = [{name = "Vikash Das", email = "vikashdas770@gmail.com"}]
 
-[tool.setuptools.packages.find]
-include = ["src*"]
+[tool.setuptools]
+packages = {find = {}}
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}

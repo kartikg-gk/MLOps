@@ -69,4 +69,3 @@ class VehiclePredictorConfig:
     model_bucket_name: str = MODEL_BUCKET_NAME
     
     
-    
